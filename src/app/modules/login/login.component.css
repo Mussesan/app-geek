@@ -1,0 +1,151 @@
+.container {
+    --light-color: #fff;
+    margin-top: 100px;
+    height: 600px;
+    width: 350px;
+    bottom: 50px;
+    right: 10px;
+    margin: auto;
+}
+
+.btn-group {
+    border-radius: 100px;
+    font-family: 'Kanit';
+    background: linear-gradient(0deg, rgba(184, 19, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.btn {
+    color: #ffffff;
+    border-radius: 100px;
+    width: 150px;
+    font-family: 'Kanit';
+}
+
+.logo {
+    border-radius: 100px;
+    border-style: groove;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.text-center {
+    background-color: #000000;
+    font-family: 'Kanit';
+}
+
+.fw-normal {
+    color: #ffffff;
+}
+
+
+form .form-icons .input-group-field {
+    border-color: #000000;
+}
+
+.input-group-field {
+    height: 40px;
+    color: #ffffff;
+    background-color: rgba(184, 19, 51, 1);
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+
+form .form-icons .fa {
+    color: #ffffff;
+    width: 1rem;
+    padding-left: 10px;
+}
+
+.form-icons {
+    padding-top: 5px;
+    padding: 20px 20px;
+}
+
+.fa-envelope {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.fa-key {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.esqueceu-senha {
+    color: white;
+    padding: 10px 10px 10px 140px;
+    font-size: 10px;
+}
+
+a:hover {
+    color: #886018;
+}
+
+.relembrar {
+    color: #ffffff;
+    font-family: 'Kanit';
+}
+
+.btn-lg {
+    color: #ffffff;
+    margin-top: 15px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(136, 96, 24) 0%, rgba(184, 19, 51, 1) 100%);
+    margin-bottom: 10px;
+    border: 3px solid #212529;
+}
+
+.traçocomeço {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 10px;
+    height: 10px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.iconereddit {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.iconeinstagram {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.iconefacebook {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.iconegmail {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.iconetwitter {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.traçofinal {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 10px;
+    height: 10px;
+}

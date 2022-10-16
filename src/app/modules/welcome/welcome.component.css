@@ -1,0 +1,43 @@
+.container {
+    margin-top: 100px;
+    height: 600px;
+    width: 350px;
+    bottom: 50px;
+    right: 10px;
+    margin: auto;
+    font-family: 'Kanit';
+}
+
+.logo {
+    background-color: #FB3640;
+    border-radius: 100px;
+    border-style: groove;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.text-center {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.fw-normal {
+    font-family: 'Kanit';
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.btn-group {
+    border-radius: 100px;
+    font-family: 'Kanit';
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
+}
+
+.btn {
+    color: #ffffff;
+    border-radius: 100px;
+    width: 150px;
+    font-family: 'Kanit';
+    font-size: 15px;
+}

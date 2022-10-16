@@ -1,0 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <script src="atividades.component.js" defer></script>
+    <title>Tela de atividades</title>
+</head>
+
+<body>
+    <div class="container" ng-controller="controller">
+
+        <nav id="navbarcima" class="navbarcima">
+            <table>
+                <td>
+                    <img id="icontable" src="/app/Icons/home.png" onclick="inicial()" />
+                    <img id="icontable" src="/app/Icons/chat.png" onclick="chat()" />
+                    <img id="icontable" src="/app/Icons/megaphone.png" onclick="eventos()" />
+                    <img id="icontable" src="/app/Icons/cart.png" onclick="loja()" />
+                    <img id="icontable" src="/app/Icons/extras.png" />
+                </td>
+            </table>
+            <button type="button" class="button blue mobile" id="criarAtividade">Criar atividade</button>
+        </nav>
+        <div id="atividade">
+            <p><img /></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Nova atividade</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="file" id="#imagem" class="modal-field" placeholder="Imagem" required>
+                    <input type="text" id="#nome" data-index="new" class="modal-field" placeholder="Nome da atividade"
+                        required>
+                    <input type="text" id="#status" class="modal-field" placeholder="Status da atividade" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Criar</button>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>

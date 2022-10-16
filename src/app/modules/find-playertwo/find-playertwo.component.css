@@ -1,0 +1,197 @@
+.criarAtividade {
+    border-style: none;
+    height: 50px;
+    padding: 6px 12px;
+    margin-top: 15px;
+    background: linear-gradient(0deg, rgba(141, 17, 52, 1) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+    border: 3px solid rgba(141, 17, 52, 1);
+    font-family: 'Kanit';
+    margin-left: 95px;
+}
+
+.pocentagemMatch {
+    border-style: none;
+    padding: 6px 12px;
+    margin-top: 15px;
+    background: linear-gradient(0deg, rgba(141, 17, 52, 1) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 90px;
+    transition: box-shadow .6s ease;
+    border: 3px solid rgba(141, 17, 52, 1);
+    font-family: 'Kanit';
+    margin-left: 135px;
+}
+
+.container {
+    --light-color: #fff;
+    margin-top: 100px;
+    height: 1000px;
+    width: 350px;
+    bottom: 50px;
+    right: 10px;
+    margin: auto;
+    font-family: 'Kanit';
+}
+
+#imagem {
+    margin-top: 10px;
+    margin-left: 13px;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    border: 3px solid rgba(141, 17, 52, 1);
+}
+
+nav {
+    background: rgba(141, 17, 52, 1) 35%;
+    border-radius: 10px;
+}
+
+
+body {
+    background: #000;
+    font-family: 'Kanit';
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Kanit';
+}
+
+#icontable {
+    margin-left: 23px;
+    width: 30px;
+    height: 20px;
+}
+
+.preferencias {
+    border-radius: 10px;
+    margin-left: 165px;
+    width: max-content;
+    background-color: firebrick;
+}
+
+.row {
+    margin-left: 10px;
+}
+
+.to_show {
+    width: max-content;
+    display: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+/* CIRCLE MENU  */
+
+body {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+
+#menu {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    list-style: none;
+    font-size: 200%;
+}
+
+.menu-button {
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu-button {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    background: #424242;
+    background-size: 100%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#menu:not(:target)>a:first-of-type,
+#menu:target>a:last-of-type {
+    opacity: 1;
+    z-index: 1;
+}
+
+#menu:not(:target)>.icon-plus:before,
+#menu:target>.icon-minus:before {
+    opacity: 1;
+}
+
+.menu-item {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 55%;
+    line-height: 5px;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    background-color: #424242;
+    transform: translate(0px, 0px);
+    transition: transform 500ms;
+    z-index: -2;
+    transition: .5s;
+}
+
+.menu-item:hover {
+    opacity: 0.5;
+    box-shadow: 0 5px 10px black;
+}
+
+
+.menu-item a {
+    color: #fff;
+    position: relative;
+    top: 30%;
+    left: 0;
+    text-decoration: none;
+}
+
+#menu:target>.menu-item:nth-child(6) {
+    transform: rotate(60deg) translateY(-150px) rotate(300deg);
+    transition-delay: 0s;
+}
+
+#menu:target>.menu-item:nth-child(5) {
+    transform: rotate(20deg) translateY(-155px) rotate(-20deg);
+    transition-delay: 0.1s;
+}
+
+#menu:target>.menu-item:nth-child(3) {
+    transform: rotate(-20deg) translateY(-155px) rotate(20deg);
+    transition-delay: 0.2s;
+}
+
+#menu:target>.menu-item:nth-child(4) {
+    transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+    transition-delay: 0.3s;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    margin: -10px 0 0 -30px;
+    top: 70%;
+    left: 50%;
+    font-size: 20px;
+}

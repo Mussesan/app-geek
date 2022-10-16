@@ -1,0 +1,112 @@
+.container {
+    --light-color: #fff;
+    margin-top: 100px;
+    height: 600px;
+    width: 350px;
+    bottom: 50px;
+    right: 10px;
+    font-family: 'Kanit';
+    margin: auto;
+}
+
+.btn {
+    border-radius: 100px;
+    width: 150px;
+    font-family: 'Kanit';
+}
+
+.logo {
+    border-radius: 100px;
+    border-style: groove;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.text-center {
+    background-color: black;
+    font-family: 'Kanit';
+}
+
+.btn-rg {
+    color: #ffffff;
+    margin-top: 15px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9));
+    margin-bottom: 10px;
+    border: 3px solid #212529;
+}
+
+form .form-icons {
+    color: #ffffff;
+    text-align: right;
+    background: rgb(99, 15, 52);
+    background: linear-gradient(90deg, rgba(99, 15, 52, 1) 0%, rgba(141, 17, 52, 1) 35%, rgba(184, 19, 51, 1) 100%);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 100px;
+    padding: 80px 60px;
+}
+
+.input-group {
+    width: 200px;
+}
+
+form .form-icons .input-group-field {
+    border-color: black;
+}
+
+.input-group-field {
+    color: #ffffff;
+    width: 80%;
+    background-color: black;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-bottom: 8px;
+}
+
+form .form-icons .fa {
+    width: 2rem;
+    height: 30px;
+    border-radius: 10%;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.form-icons {
+    padding-top: 5px;
+    padding: 20px 20px;
+}
+
+.fa-user {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 18px;
+}
+
+.fa-envelope {
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 8px;
+}
+
+.fa-key {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 8px;
+}
+
+.fa-phone {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 8px;
+}
+
+.fa-calendar {
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 8px;
+}

@@ -1,7 +1,7 @@
 .container {
     --light-color: #fff;
     margin-top: 100px;
-    height: 600px;
+    height: 1000px;
     width: 350px;
     bottom: 50px;
     right: 10px;
@@ -11,7 +11,7 @@
 .btn-group {
     border-radius: 100px;
     font-family: 'Kanit';
-    background: linear-gradient(0deg, rgba(184, 19, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
 }
 
 .btn {
@@ -44,6 +44,7 @@ form .form-icons .input-group-field {
 }
 
 .input-group-field {
+    padding-left: 20px;
     height: 40px;
     color: #ffffff;
     background-color: rgba(184, 19, 51, 1);
@@ -83,69 +84,53 @@ form .form-icons .fa {
     font-size: 10px;
 }
 
-a:hover {
-    color: #886018;
-}
-
 .relembrar {
     color: #ffffff;
     font-family: 'Kanit';
 }
 
-.btn-lg {
+.btn-group {
+    border-radius: 100px;
+    font-family: 'Kanit';
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
+    
+}
+
+.btn {
     color: #ffffff;
-    margin-top: 15px;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(136, 96, 24) 0%, rgba(184, 19, 51, 1) 100%);
-    margin-bottom: 10px;
-    border: 3px solid #212529;
+    border-radius: 100px;
+    width: 150px;
+    font-family: 'Kanit';
+    font-size: 15px;
+    transition: background-color 0.5    s;
 }
 
-.traçocomeço {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding-top: 10px;
-    height: 10px;
+.btn:hover {
+    background: linear-gradient(0deg, rgb(184, 19, 51, 0.9),rgba(136, 24, 51, 0.3));
+    transition: background-color 0.5s;
 }
 
-h1 {
+.title-social-icons {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.iconereddit {
+.divider {
+    margin: 30px 10px 30px 10px;
+    padding-top: 30px;
+    border-top: 2px ridge rgba(255,255,255,0.2);
+    
+    color: #fff;
+}
+
+.social-icon {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin: 15px;
+    cursor: pointer;
 }
 
-.iconeinstagram {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.iconefacebook {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.iconegmail {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.iconetwitter {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.traçofinal {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding-top: 10px;
-    height: 10px;
+.social-icons-group {
+    padding-top: 30px;
+    margin-top: 30px;
 }

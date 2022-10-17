@@ -1,7 +1,7 @@
 .container {
     --light-color: #fff;
     margin-top: 100px;
-    height: 600px;
+    height: 1000px;
     width: 350px;
     bottom: 50px;
     right: 10px;
@@ -13,6 +13,7 @@
     border-radius: 100px;
     width: 150px;
     font-family: 'Kanit';
+    color: #fff;
 }
 
 .logo {
@@ -109,4 +110,12 @@ form .form-icons .fa {
     padding-top: 7px;
     padding-right: 10px;
     padding-left: 8px;
+}
+
+.btn-group {
+    border-radius: 100px !important;
+    font-family: 'Kanit';
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9));
+    color: rgba(255, 255, 255, 0.274);
+    margin-top: 30px;
 }

@@ -10,7 +10,7 @@
 <body class="text-center">
     <div class="container">
         <form>
-            <img class="mb-4 logo" src="/app/Icons/logo.png" alt="" width="72" height="57" />
+            <img class="mb-4 logo" src="../../../assets/images/logo.png" alt="" width="72" height="57" />
             <div class="form-icons">
                 <div class="input-group">
                     <input class="input-group-field mb-2" type="text" placeholder="Email" />
@@ -19,7 +19,7 @@
                     </span>
                 </div>
                 <div class="input-group">
-                    <input class="input-group-field mb-2" type="text" placeholder="Senha" />
+                    <input class="input-group-field mb-2" type="password" placeholder="Senha" />
                     <span class="input-group-label">
                         <i class="fa fa-key"></i>
                     </span>
@@ -34,16 +34,25 @@
                     Relembrar
                 </label>
             </div>
-            <button type="submit" class="btn btn-dark btn-lg">Entrar</button>
+
+
+            <div class="btn-group" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-outline-dark" routerLink="login">
+                    Entrar
+                </button>
+            </div>
+
+            
             <div class="redessociais">
-                <h1>Se conecte por</h1>
-                <div class="traçocomeço"></div>
-                <img src="/app/Icons/3225187_app_logo_media_popular_reddit_icon.png" class="iconereddit" />
-                <img src="/app/Icons/3225191_app_instagram_logo_media_popular_icon.png" class="iconeinstagram" />
-                <img src="/app/Icons/3225194_app_facebook_logo_media_popular_icon.png" class="iconefacebook" />
-                <img src="/app/Icons/7123953_logo_google_g_icon.png" class="iconegmail" />
-                <img src="/app/Icons/771365_circle_logo_media_network_social_icon.png" class="iconetwitter" />
-                <div class="traçofinal"></div>
+                <div class="divider">
+                    <p>Ou entre com</p>
+                </div>
+                <span class="social-icons-group">
+                    <img src="../../../assets/images/LinkedIn_icon_circle.svg.png" class="social-icon" />
+                    <img src="../../../assets/images/3225194_app_facebook_logo_media_popular_icon.png" class="social-icon" />
+                    <img src="../../../assets/images/7123953_logo_google_g_icon.png" class="social-icon" />
+                    <img src="../../../assets/images/3225187_app_logo_media_popular_reddit_icon.png" class="social-icon" />    
+                </span>
             </div>
         </form>
     </div>

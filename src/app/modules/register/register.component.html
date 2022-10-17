@@ -48,7 +48,14 @@
                     </span>
                 </div>
             </div>
-            <button type="submit" class="btn btn-dark btn-rg">Cadastrar</button>
+            <div class="btn-group" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-outline-dark" routerLink="/">
+                    Voltar
+                </button>
+                <button type="button" class="btn btn-outline-dark" routerLink="/" (click)="registerAlert()">
+                    Cadastrar
+                </button>
+            </div>           
         </form>
     </div>
 </body>

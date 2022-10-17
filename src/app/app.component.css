@@ -58,21 +58,21 @@ ul {
     Display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 30px 50px 100px #85888C;
+    box-shadow: 1px 1px 50px #85888C;
 }
 
 .content {
     border: 1px solid #36383F;
     border-radius: 20px;
-    width: 94%;
-    height: 91%;
+    width: 98%;
+    height: 95%;
     background-color: #F5F6FA;
     overflow: hidden;
 }
 
 nav {
     background-color: #1E1E23;
-    height: 65px;
+    height: 60px;
 }
 
 
@@ -148,11 +148,12 @@ nav {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    border-radius: 30px;
 }
 
 #menu li {
     padding: 10px 0;
-    transition-delay: 2s;
+    transition-delay: 1s;
 }
 
 #menuToggle input:checked~ul {

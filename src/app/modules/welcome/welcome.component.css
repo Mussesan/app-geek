@@ -1,9 +1,8 @@
 .container {
     margin-top: 100px;
-    height: 600px;
+    height: 1000px;
     width: 350px;
-    bottom: 50px;
-    right: 10px;
+    padding-top: 60px;
     margin: auto;
     font-family: 'Kanit';
 }
@@ -15,6 +14,7 @@
     border-color: black;
     width: 200px;
     height: 200px;
+    margin-top: 50px;
 }
 
 .text-center {
@@ -32,6 +32,7 @@
     border-radius: 100px;
     font-family: 'Kanit';
     background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
+    
 }
 
 .btn {
@@ -40,4 +41,10 @@
     width: 150px;
     font-family: 'Kanit';
     font-size: 15px;
+    transition: background-color 0.5    s;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, rgb(184, 19, 51, 0.9),rgba(136, 24, 51, 0.3));
+    transition: background-color 0.5s;
 }

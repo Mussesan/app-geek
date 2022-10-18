@@ -19,13 +19,13 @@
 .logo {
     border-radius: 100px;
     border-style: groove;
-    border-color: black;
+    border-color: #121212;
     width: 200px;
     height: 200px;
 }
 
 .text-center {
-    background-color: black;
+    background-color: #121212;
     font-family: 'Kanit';
 }
 
@@ -61,7 +61,7 @@ form .form-icons .input-group-field {
 .input-group-field {
     color: #ffffff;
     width: 80%;
-    background-color: black;
+    background-color: #121212;
     border: 2px solid;
     border-radius: 25px;
     margin-bottom: 8px;

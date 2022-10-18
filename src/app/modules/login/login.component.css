@@ -24,23 +24,14 @@
 .logo {
     border-radius: 100px;
     border-style: groove;
-    border-color: black;
+    border-color: #121212;
     width: 200px;
     height: 200px;
 }
 
 .text-center {
-    background-color: #000000;
+    background-color: #121212;
     font-family: 'Kanit';
-}
-
-.fw-normal {
-    color: #ffffff;
-}
-
-
-form .form-icons .input-group-field {
-    border-color: #000000;
 }
 
 .input-group-field {

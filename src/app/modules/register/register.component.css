@@ -83,39 +83,58 @@ form .form-icons .fa {
 }
 
 .fa-user {
+    color:#fff;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 18px;
 }
 
 .fa-envelope {
+    color:#fff;
     padding-top: 5px;
     padding-right: 15px;
     padding-left: 8px;
 }
 
 .fa-key {
+    color:#fff;
     padding-top: 5px;
     padding-right: 20px;
     padding-left: 8px;
 }
 
 .fa-phone {
+    color:#fff;
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 8px;
 }
 
 .fa-calendar {
+    color:#fff;
     padding-top: 7px;
     padding-right: 10px;
     padding-left: 8px;
 }
 
 .btn-group {
-    border-radius: 100px !important;
-    font-family: 'Kanit';
-    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9));
-    color: rgba(255, 255, 255, 0.274);
     margin-top: 30px;
+    border-radius: 100px;
+    font-family: 'Kanit';
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
+    
+}
+
+.btn {
+    color: #ffffff;
+    border-radius: 100px;
+    width: 150px;
+    font-family: 'Kanit';
+    font-size: 15px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, rgb(184, 19, 51, 0.9),rgba(136, 24, 51, 0.3));
+    transition: background-color 0.5s;
 }

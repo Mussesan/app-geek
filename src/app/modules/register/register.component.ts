@@ -36,7 +36,12 @@ export class RegisterComponent {
 
       birth_date: ['', Validators.compose([
         Validators.required
-      ])]        
+      ])],
+      phone: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(11)
+      ])]
 
     })
   }

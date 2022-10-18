@@ -9,11 +9,64 @@
 <body class="text-center">
     <div class="container">
         <img class="mb-4 logo" src="../../../assets/images/logo.png" alt="" width="72" height="57" />
-        
-        <form [formGroup]="form">
-            
 
+        <form [formGroup]="form">
+
+            <div class="form-icons">
+
+                <input class="input-group-field" type="text" placeholder="Nome completo" formControlName="name"><i
+                    class="fa fa-user"></i>
+                <br>
+                <small class="danger" *ngIf="form.controls.name.invalid && !form.controls.email.pristine">
+                    Nome inválido, corrija!
+                </small>
+
+                <input class="input-group-field" type="email" placeholder="E-mail" formControlName="email"><i
+                    class="fa fa-envelope"></i>
+                <br>
+                <small class="danger" *ngIf="form.controls.email.invalid && !form.controls.email.pristine">
+                    E-mail inválido, corrija!
+                </small>
+
+                <input class="input-group-field" type="password" placeholder="Senha" formControlName="password"><i
+                    class="fa fa-key"></i>
+                <br>
+                <small class="danger" *ngIf="form.controls.password.invalid && !form.controls.title.pristine">
+                    A senha deve conter de 9 a 18 caracteres.
+                </small>
+
+                <input class="input-group-field" type="password" placeholder="Repita a senha"
+                    formControlName="password"><i class="fa fa-key"></i>
+                <br>
+                <small class="danger" *ngIf="form.controls.password.invalid && !form.controls.password.pristine">
+                    As senhas devem ser iguais.
+                </small>
+
+                <input class="input-group-field" type="date" placeholder="Data de nascimento" formControlName="date"><i
+                    class="fa fa-calendar"></i>
+
+                <input class="input-group-field" type="phone" placeholder="Telefone com DDD" formControlName="phone"><i
+                    class="fa fa-phone"></i>
+                <br>
+                <small class="danger" *ngIf="form.controls.phone.invalid && !form.controls.phone.pristine">
+                    O telefone deve ter de 10 a 11 dígitos!
+                </small>
+            </div>
         </form>
 
+        <div class="btn-group" role="group" aria-label="Large button group">
+
+            <!-- 
+                Está faltando apenas armazenar no banco de dados, 
+                nesse projeto será utilizado localStorage para fins de protótipo
+            -->
+
+            <button type="button" class="btn btn-outline-dark" routerLink="/">
+                Cancelar
+            </button>
+            <button type="button" class="btn btn-outline-dark" routerLink="/login" (click)="registerAlert() ">
+                Efetuar Cadastro
+            </button>
+        </div>
     </div>
 </body>

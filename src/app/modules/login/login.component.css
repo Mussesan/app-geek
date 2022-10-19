@@ -125,3 +125,10 @@ form .form-icons .fa {
     padding-top: 30px;
     margin-top: 30px;
 }
+
+.unscribedMsg {
+    color: rgba(255,255,255,0.5);
+    
+    text-decoration: none;
+    font-size: 12px;
+}

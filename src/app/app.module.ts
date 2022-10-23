@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Form, ReactiveFormsModule } from '@angular/forms';
+import {HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ProfileComponent } from './modules/profile/profile.component';
 import { ChatComponent } from './modules/chat/chat.component';
 import { ActivitiesComponent } from './modules/activities/activities.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
+import { AuthService } from './modules/login/auth.service';
 
 
 @NgModule({
@@ -28,9 +30,10 @@ import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.
   imports: [
     BrowserModule,
     AppRoutingModule,   
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

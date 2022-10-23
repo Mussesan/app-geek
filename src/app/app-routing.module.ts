@@ -8,7 +8,7 @@ import { ProfileComponent } from './modules/profile/profile.component';
 import { RegisterComponent } from './modules/register/register.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
 
-const app_routes: Routes = [
+const app_router: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
@@ -19,7 +19,7 @@ const app_routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(app_routes)],
+  imports: [RouterModule.forRoot(app_router)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

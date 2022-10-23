@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthenticateService } from './authenticate.service';
+import { Component, Input, OnInit } from '@angular/core';
+
+
 import { User } from 'src/app/models/user.model';
+import { AuthService } from './auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,17 +11,18 @@ import { User } from 'src/app/models/user.model';
 })
 export class LoginComponent implements OnInit {
 
+  private user: User[] = [];
+
+  constructor(private authService: AuthService) {
+    
   
-
-  constructor(private auth: AuthenticateService) { }
-
-  private user: User;
+  }
 
   ngOnInit(): void {
   }
 
   fazerLogin(){
-    
+    console.log('login pressionado')
   }
 
 }

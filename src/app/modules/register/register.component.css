@@ -138,3 +138,13 @@ form .form-icons .fa {
     background: linear-gradient(0deg, rgb(184, 19, 51, 0.9),rgba(136, 24, 51, 0.3));
     transition: background-color 0.5s;
 }
+
+.danger {
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -8,18 +8,26 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 </head>
 <body class="text-center">
+
     <div class="container">
-        <form>
+
+        <div class="login-box">
             <img class="mb-4 logo" src="../../../assets/images/logo.png" alt="" width="72" height="57" />
             <div class="form-icons">
+
+                <!-- User email input -->
                 <div class="input-group">
-                    <input class="input-group-field mb-2" type="text" placeholder="Email" />
+                    <input id="user-email" class="input-group-field mb-2" type="text" placeholder="Email"/>
+                    
                     <span class="input-group-label">
                         <i class="fa fa-envelope"></i>
                     </span>
                 </div>
+
+                <!-- User password input -->
                 <div class="input-group">
-                    <input class="input-group-field mb-2" type="password" placeholder="Senha" />
+                    <input id="user-password" class="input-group-field mb-2" type="password" placeholder="Senha" />
+                    [(ngModel)]="user.password"
                     <span class="input-group-label">
                         <i class="fa fa-key"></i>
                     </span>
@@ -37,12 +45,12 @@
 
 
             <div class="btn-group" role="group" aria-label="Large button group">
-                <button type="button" class="btn btn-outline-dark" routerLink="login">
+                <button type="button" class="btn btn-outline-dark" routerLink="login" (click)="fazerLogin()">
                     Entrar
                 </button>
             </div><br><br>
 
-            <a class="unscribedMsg" routerLink="/">Não possui cadastro? Clique aqui </a>
+            <a class="unscribedMsg" routerLink="/register">Não possui cadastro? Clique aqui </a>
             
             <div class="redessociais">
                 <div class="divider">
@@ -55,6 +63,6 @@
                     <img src="../../../assets/images/3225187_app_logo_media_popular_reddit_icon.png" class="social-icon" />    
                 </span>
             </div>
-        </form>
+        </div>
     </div>
 </body>

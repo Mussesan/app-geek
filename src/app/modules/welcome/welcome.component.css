@@ -1,10 +1,29 @@
 .container {
-    margin-top: 100px;
-    height: 1000px;
+    height: 600px;
     width: 350px;
-    padding-top: 60px;
-    margin: auto;
+    padding: 170px 0 0 0 ;
     font-family: 'Kanit';
+    position: relative;
+    z-index: 0;
+}
+
+.black-box {
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 130px;
+    
+    z-index: -1;
+    
+    border-radius: 15px;
+}
+
+body {
+    background-image: url(../../../assets/images/backgrounds/0fa8d5f32c5101a85351665b753ee7f0.jpg);
+    height: 800px;
+    background-position: center;
+    
 }
 
 .logo {
@@ -31,20 +50,23 @@
 .btn-group {
     border-radius: 100px;
     font-family: 'Kanit';
-    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
+    background: linear-gradient(0deg, rgb(53, 9, 19), rgba(230, 25, 66, 0.9))
     
 }
 
 .btn {
     color: #ffffff;
     border-radius: 100px;
-    width: 150px;
+    width: 130px;    
     font-family: 'Kanit';
     font-size: 15px;
-    transition: background-color 0.5    s;
+    transition: background-color 1.0s;
+    border: 3px solid rgb(32, 26, 26);
 }
 
 .btn:hover {
-    background: linear-gradient(0deg, rgb(184, 19, 51, 0.9),rgba(136, 24, 51, 0.3));
-    transition: background-color 0.5s;
+    background: linear-gradient(0deg, rgba(45, 6, 56, 0.9),rgb(171, 44, 245));
+    transition: background-color 5,0s;
+    border: 3px solid white;
 }
+

@@ -8,61 +8,62 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 </head>
 <body class="text-center">
+    <div class="white-card">
+        
+        <div class="container">
 
-    <div class="container">
-
-        <div class="login-box">
-            <img class="mb-4 logo" src="../../../assets/images/logo.png" alt="" width="72" height="57" />
-            <div class="form-icons">
-
-                <!-- User email input -->
-                <div class="input-group">
-                    <input id="user-email" class="input-group-field mb-2" type="text" placeholder="Email"/>
-                    
-                    <span class="input-group-label">
-                        <i class="fa fa-envelope"></i>
+            <div class="login-box">
+                <img class="mb-4 logo" src="../../../assets/images/logo.png" alt="" width="72" height="57" />
+                <div class="form-icons">
+    
+                    <!-- User email input -->
+                    <div class="input-group">
+                        <input id="user-email" class="input-group-field mb-2" type="text" placeholder="Email"/>
+                        
+                        <span class="input-group-label">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+    
+                    <!-- User password input -->
+                    <div class="input-group">
+                        <input id="user-password" class="input-group-field mb-2" type="password" placeholder="Senha" />
+                        <span class="input-group-label">
+                            <i class="fa fa-key"></i>
+                        </span>
+                    </div>
+    
+                    <div><a href="#" class="esqueceu-senha">Esqueceu a senha</a></div>
+                </div>
+    
+                <div class="checkbox mb-3">
+                    <label class="relembrar">
+                        <input type="checkbox" value="remember-me" />
+                        Relembrar
+                    </label>
+                </div>
+    
+    
+                <div class="btn-group" role="group" aria-label="Large button group">
+                    <button type="button" class="btn btn-outline-dark" routerLink="login" (click)="fazerLogin()">
+                        Entrar
+                    </button>
+                </div><br><br>
+    
+                <a class="unscribedMsg" routerLink="/register">Não possui cadastro? Clique aqui </a>
+                
+                <div class="redessociais">
+                    <div class="divider">
+                        <p>Ou entre com</p>
+                    </div>
+                    <span class="social-icons-group">
+                        <img src="../../../assets/images/LinkedIn_icon_circle.svg.png" class="social-icon" />
+                        <img src="../../../assets/images/3225194_app_facebook_logo_media_popular_icon.png" class="social-icon" />
+                        <img src="../../../assets/images/7123953_logo_google_g_icon.png" class="social-icon" />
+                        <img src="../../../assets/images/3225187_app_logo_media_popular_reddit_icon.png" class="social-icon" />    
                     </span>
                 </div>
-
-                <!-- User password input -->
-                <div class="input-group">
-                    <input id="user-password" class="input-group-field mb-2" type="password" placeholder="Senha" />
-                    [(ngModel)]="user.password"
-                    <span class="input-group-label">
-                        <i class="fa fa-key"></i>
-                    </span>
-                </div>
-
-                <div><a href="#" class="esqueceu-senha">Esqueceu a senha</a></div>
-            </div>
-
-            <div class="checkbox mb-3">
-                <label class="relembrar">
-                    <input type="checkbox" value="remember-me" />
-                    Relembrar
-                </label>
-            </div>
-
-
-            <div class="btn-group" role="group" aria-label="Large button group">
-                <button type="button" class="btn btn-outline-dark" routerLink="login" (click)="fazerLogin()">
-                    Entrar
-                </button>
-            </div><br><br>
-
-            <a class="unscribedMsg" routerLink="/register">Não possui cadastro? Clique aqui </a>
-            
-            <div class="redessociais">
-                <div class="divider">
-                    <p>Ou entre com</p>
-                </div>
-                <span class="social-icons-group">
-                    <img src="../../../assets/images/LinkedIn_icon_circle.svg.png" class="social-icon" />
-                    <img src="../../../assets/images/3225194_app_facebook_logo_media_popular_icon.png" class="social-icon" />
-                    <img src="../../../assets/images/7123953_logo_google_g_icon.png" class="social-icon" />
-                    <img src="../../../assets/images/3225187_app_logo_media_popular_reddit_icon.png" class="social-icon" />    
-                </span>
             </div>
         </div>
-    </div>
+    </div>    
 </body>

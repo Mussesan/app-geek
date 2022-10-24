@@ -13,7 +13,7 @@ const app_router: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: 'find-playertwo', component: FindPlayertwoComponent},
+  {path: 'find-player', component: FindPlayertwoComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'activities', component: ActivitiesComponent}
 ];

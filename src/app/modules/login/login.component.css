@@ -1,11 +1,18 @@
 .container {
-    --light-color: #fff;
+    
+
+    background-color: rgb(0, 0, 0);
     margin-top: 100px;
-    height: 1000px;
+    height: 600px;
     width: 350px;
     bottom: 50px;
     right: 10px;
     margin: auto;
+}
+
+.white-card {
+    
+    border: 40px solid #fff;
 }
 
 .btn-group {
@@ -60,8 +67,21 @@
 }
 
 .fa-envelope {
+    
     padding-top: 10px;
     padding-right: 20px;
+    
+}
+
+.fa-envelope i {
+    color: red;
+}
+
+.fa-envelope::after {
+    
+    padding-top: 10px;
+    padding-right: 20px;
+    
 }
 
 .fa-key {
@@ -127,7 +147,7 @@
 }
 
 .unscribedMsg {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 0, 0, 0.5);
     
     text-decoration: none;
     font-size: 12px;

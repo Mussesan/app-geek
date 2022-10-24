@@ -8,11 +8,13 @@
 </head>
 
 <body class="text-center">
-    <div class="container">
+    <div class="container animate__animated animate__flipInX">
+        <div class="black-box">
+        </div>
         <h1>Bem Vindo</h1>
         <img class="mb-4 logo" src="../../../assets/images/logo.png" alt="" width="72" height="57" />
-        <h1 class="h3 mb-3 fw-normal">Geek Portal</h1>
-        <div class="btn-group" role="group" aria-label="Large button group">
+        <h1 class="h3 mb-3 fw-normal">Portal Geek</h1>
+        <div class="btn-group animate__animated " role="group" aria-label="Large button group">
             <button type="button" class="btn btn-outline-dark" routerLink="login">
                 Entrar
             </button>
@@ -20,8 +22,7 @@
                 Cadastre-se
             </button>
         </div>
-        <span class="tt-users">
-            Mostrar total de usuários cadastrados: <button (click)="getTotalUsers()"></button>
-        </span>
-    </div>
+
+    </div>  
+    
 </body>

@@ -1,11 +1,13 @@
 .container {
     --light-color: #fff;
-    margin-top: 100px;
+    margin-top: 160px;
+    padding-top: 90px;
     height: 1000px;
     width: 350px;
     bottom: 50px;
     right: 10px;
     font-family: 'Kanit';
+    
     margin: auto;
 }
 
@@ -13,7 +15,7 @@
     border-radius: 100px;
     width: 150px;
     font-family: 'Kanit';
-    color: #fff;
+    color: rgba(255, 255, 255, 0.137);
 }
 
 .logo {
@@ -43,11 +45,11 @@ form .form-icons {
     text-align: right;
     background: rgb(99, 15, 52);
     background: linear-gradient(90deg, rgba(99, 15, 52, 1) 0%, rgba(141, 17, 52, 1) 35%, rgba(184, 19, 51, 1) 100%);
-    border-top-left-radius: 100px;
-    border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 100px;
-    padding: 80px 60px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    padding: 60px 30px;
 }
 
 .input-group {
@@ -56,6 +58,7 @@ form .form-icons {
 
 form .form-icons .input-group-field {
     border-color: black;
+    padding-left: 10px;
 }
 
 .input-group-field {
@@ -139,7 +142,7 @@ form .form-icons .fa {
     transition: background-color 0.5s;
 }
 
-.danger {
+.danger { 
     
 }
 
@@ -147,4 +150,9 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+body {
+    background-image: url(../../../assets/images/backgrounds/6d411c4be57f2683584635b73173ecb5.jpg);
+    background-size: cover;
 }

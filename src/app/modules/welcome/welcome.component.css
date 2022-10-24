@@ -20,9 +20,10 @@
 }
 
 body {
-    background-image: url(../../../assets/images/backgrounds/0fa8d5f32c5101a85351665b753ee7f0.jpg);
+    background-image: url(../../../assets/images/backgrounds/6d411c4be57f2683584635b73173ecb5.jpg);
+    background-repeat: no-repeat;
     height: 800px;
-    background-position: center;
+    background-size: cover;
     
 }
 

@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +10,52 @@
         rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
-
-    <script src="atividades.component.js" defer></script>
+    <link rel="stylesheet" href="activities.component.css">
     <title>Tela de atividades</title>
 </head>
 
 <body>
-    <div class="container" ng-controller="controller">
-
-        <nav id="navbarcima" class="navbarcima">
-            <table>
-                <td>
-                    <img id="icontable" src="/app/Icons/home.png" onclick="inicial()" />
-                    <img id="icontable" src="/app/Icons/chat.png" onclick="chat()" />
-                    <img id="icontable" src="/app/Icons/megaphone.png" onclick="eventos()" />
-                    <img id="icontable" src="/app/Icons/cart.png" onclick="loja()" />
-                    <img id="icontable" src="/app/Icons/extras.png" />
-                </td>
-            </table>
-            <button type="button" class="button blue mobile" id="criarAtividade">Criar atividade</button>
-        </nav>
-        <div id="atividade">
-            <p><img /></p>
-            <p></p>
-            <p></p>
+    <div class="container">
+        <div>
+            <img src="../../../assets/images/harry-potter-serie.webp" id="img1" />
+            <p id="atividade1">João Silva está assistindo Harry Potter</p>
+            <p id="feedback1">Gostando bastante da trilogia,
+                estou ansioso para o final</p>
         </div>
-
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Nova atividade</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="file" id="#imagem" class="modal-field" placeholder="Imagem" required>
-                    <input type="text" id="#nome" data-index="new" class="modal-field" placeholder="Nome da atividade"
-                        required>
-                    <input type="text" id="#status" class="modal-field" placeholder="Status da atividade" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Criar</button>
-                </footer>
-            </div>
+        <div>
+            <img src="../../../assets/images/league_of_legends_macos_bigsur_icon_190030.png" id="img2" />
+            <p id="atividade2">Maria José está jogando League of Legends</p>
+            <p id="feedback2">Alguém afim de ir DUO?
+                Preciso de um suporte</p>
         </div>
-
+        <div>
+            <img src="../../../assets/images/72154e5197d7c65a1df251f83ff8665b.png" id="img1" />
+            <p id="atividade1">Rubia está ouvindo Linkin Park - Numb</p>
+            <p id="feedback1">Curtindo um pouco...</p>
+        </div>
+        <div>
+            <img src="../../../assets/images/kisspng-deepest-purple-the-very-best-of-deep-purple-logo-pueple-5adbe3b7c67563.5683832615243601198129.jpg"
+                id="img2" />
+            <p id="atividade2">Dreco está ouvindo Deep Purple - Perfect Strangers</p>
+            <p id="feedback2">Um bom e velho Rock ‘n Roll ...</p>
+        </div>
+        <div>
+            <img src="../../../assets/images/png-transparent-daredevil-born-again-kingpin-elektra-marvel-cinematic-universe-daredevil.png"
+                id="img1" />
+            <p id="atividade1">Edilberto está assistindo Demolidor - Netflix</p>
+            <p id="feedback1">Curtindo muito a terceira temporada... ihull</p>
+        </div>
+        <button id="imgbtn"><img src="../../../assets/images/2022-10-29 14_03_20-Untitled – Figma.png">
+            <p>Adicionar atividade</p>
+        </button>
     </div>
+
 </body>
+
+</html>

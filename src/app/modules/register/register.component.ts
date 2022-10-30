@@ -1,6 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { User } from '../../models/user.model';
 
@@ -14,9 +15,11 @@ export class RegisterComponent implements OnInit{
   public form: FormGroup;
   public user: User[] = [];
   
+
+  
   constructor(
     private fb: FormBuilder,
-    private route: ActivatedRoute
+    private route: Router
     ){
     this.form = this.fb.group({
 
@@ -49,10 +52,9 @@ export class RegisterComponent implements OnInit{
       Validators.required, //campo requerido
       ])]
     })
-
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
   lotalUsersadd(){
@@ -88,18 +90,16 @@ export class RegisterComponent implements OnInit{
       online,
       reputation))
 
-    if (this.user != undefined || this.user == null) {
-      window.alert('Usuario Cadastrado com Sucesso!!')
-      console.log('etapa 1 ok')
+      //this.user != undefined || this.user != null && !
 
-      //navegação
-      
-      console.log('etapa redirecionar ok')
+    if (this.form.valid && this.user != undefined) {
+      window.alert('Usuario Cadastrado com Sucesso!!')      
+      //navegação      
+      this.route.navigate(['/','login']);
       this.saveStorage()
-      console.log('etapa storage ok')
-      console.log(this.user)
     } else {
       console.log('usuario não cadastrado')
+      window.alert('Preencha o formulário primeiro!')
     }    
   }
 

@@ -13,6 +13,8 @@ import { ChatComponent } from './modules/chat/chat.component';
 import { ActivitiesComponent } from './modules/activities/activities.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
 import { AuthService } from './modules/login/auth.service';
+import { HomeComponent } from './modules/home/home.component';
+
 
 
 @NgModule({
@@ -25,6 +27,7 @@ import { AuthService } from './modules/login/auth.service';
     ChatComponent,
     ActivitiesComponent,
     FindPlayertwoComponent,
+    HomeComponent
 
   ],
   imports: [

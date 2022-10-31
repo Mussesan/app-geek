@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ActivitiesComponent } from './modules/activities/activities.component';
 import { ChatComponent } from './modules/chat/chat.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
+import { HomeComponent } from './modules/home/home.component';
 import { LoginComponent } from './modules/login/login.component';
 import { ProfileComponent } from './modules/profile/profile.component';
 import { RegisterComponent } from './modules/register/register.component';
@@ -10,6 +11,7 @@ import { WelcomeComponent } from './modules/welcome/welcome.component';
 
 const app_router: Routes = [
   {path: '', component: WelcomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'profile', component: ProfileComponent},

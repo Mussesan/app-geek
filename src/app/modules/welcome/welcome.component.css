@@ -1,5 +1,5 @@
 .container {
-    height: 600px;
+    height: 655px;
     width: 350px;
     padding: 170px 0 0 0;
     position: relative;
@@ -26,7 +26,7 @@
 body {
     background-image: url(../../../assets/images/backgrounds/rm251-aum-06-f2.jpg);
     background-repeat: no-repeat;
-    height: 800px;
+    height: 855px;
     background-size: cover;
 }
 

@@ -119,10 +119,6 @@ form .form-icons .fa {
     padding-left: 8px;
 }
 
-.danger { 
-    
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -131,8 +127,9 @@ input::-webkit-inner-spin-button {
 
 body {
     background-image: url(../../../assets/images/backgrounds/rm251-aum-06-f2.jpg);
-    height: 800px;
+    height: 855px;
     background-size: cover;
+    
 
 }
 

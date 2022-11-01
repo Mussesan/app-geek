@@ -2,6 +2,7 @@
   "name": "geek-app",
   "version": "1.0.0",
   "scripts": {
+    "ng s": "ng s -o",
     "ng": "ng",
     "start": "node index",
     "build": "ng build",

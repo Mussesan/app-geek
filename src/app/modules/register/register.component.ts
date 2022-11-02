@@ -71,7 +71,6 @@ export class RegisterComponent implements OnInit{
     const phone_form = this.form.controls['phone'].value;
     const birth_date_form = this.form.controls['birth_date'].value;
     const nickname = '';
-    const profile_descript = '';
     const status = true;
     const online = false;
     const reputation = 0;
@@ -85,7 +84,6 @@ export class RegisterComponent implements OnInit{
       phone_form,
       birth_date_form,
       nickname,
-      profile_descript,
       status,
       online,
       reputation))
@@ -103,9 +101,13 @@ export class RegisterComponent implements OnInit{
     }    
   }
 
-  saveStorage(){
-    const data = JSON.stringify(this.user)
-    localStorage.setItem('USUARIO',data);
+  saveStorage(){    
+    localStorage.setItem('USER',JSON.stringify(this.user));
+  }
+
+  getStorage(){
+    const user = localStorage.getItem('USER');
+    console.log(user);
   }
 
 }

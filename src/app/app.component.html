@@ -6,15 +6,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Secular+One&display=swap" rel="stylesheet">    
 </head>
 
-<body class="bg-black1">    
+<body class="bg-black1">        
     <div>
         <div class="container">
+            
             <div class="phone">
                 <div class="content">
-                    <!-- CONTENT  -->
+                    <div class="wrapper">
+                        <nav>
+                            <input type="radio" name="tab" id="comment" >
+                            <input type="radio" name="tab" id="glass">
+                            <input type="radio" name="tab" id="home" checked>
+                            <input type="radio" name="tab" id="cubes">
+                            <input type="radio" name="tab" id="gear">
+                            <label for="comment" class="comment"><a href="#"><i class="fa fa-comment"></i></a></label>
+                            <label for="glass" class="glass"><a href="#"><i class="fa fa-gamepad"></i></a></label>
+                            <label for="home" class="home"><a href="#"><i class="fa fa-home"></i></a></label>
+                            <label for="cubes" class="cubes"><a href="#"><i class="fa fa-bell"></i></a></label>
+                            <label for="gear" class="gear"><a href="#"><i class="fa fa-gear"></i></a></label>
+                            <div class="tab">
+                            </div>
+                        </nav>
+                    </div>
                     <router-outlet></router-outlet>
-                    <!-- CONTENT  -->
                 </div>
+                
             </div>
         </div>
     </div>

@@ -55,6 +55,24 @@
                 <small class="danger" *ngIf="form.controls.phone.invalid && !form.controls.phone.pristine">
                     O telefone deve ter de 10 a 11 dígitos!
                 </small>
+
+                <div class="dropdown-opts">
+                    <label for="genre"></label>
+                    <select name="genre" id="genre-group" formControlName="genre">
+                        <option>Selecione</option>
+                        <option value="0">Outro</option>
+                        <option value="1">Ele</option>
+                        <option value="2">Ela</option>                    
+                    </select>
+                    <i class="fa fa-transgender"></i>
+                </div>
+                
+
+                
+                <br>
+                <small class="danger" *ngIf="form.controls.phone.invalid && !form.controls.phone.pristine">
+                    É necessário escolher ao menos uma opção!
+                </small>
             </div>
         </form>
 
@@ -65,7 +83,7 @@
             <button type="button" class="btn neonbutton btn-outline-dark" (click)="fazerCadastro()">
                 Cadastrar
             </button>
-            <button (click)="getStorage()"></button>
+            
         </div>
     </div>
 </body>

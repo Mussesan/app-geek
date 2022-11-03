@@ -37,7 +37,9 @@ import { HomeComponent } from './modules/home/home.component';
     FormsModule
 
   ],
-  providers: [AuthService],
+  providers: [
+    LoginComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

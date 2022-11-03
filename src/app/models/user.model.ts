@@ -9,7 +9,8 @@ export class User {
         public password:        string,
         public password_check:  string,
         public phone:           number,
-        public birth_date:      Date
+        public birth_date:      Date,
+        public genre:           number
     ){}
 
     

@@ -201,4 +201,19 @@ body {
     margin-top: -20px;
 }
 
+#genre-group {
+    border-radius: 9px;
+    
+}
+
+.dropdown-opts i {
+    font-size: 20px;
+    margin-left: -8px;
+}
+
+.dropdown-opts {
+    float: left;
+    margin: 0px 0px 0px 85px
+}
+
 

@@ -52,6 +52,9 @@ export class RegisterComponent implements OnInit{
       ])],
       birth_date: ['', Validators.compose([ //'placeholder', array de validações   
       Validators.required, //campo requerido
+      ])],
+      genre: ['', Validators.compose([ //'placeholder', array de validações   
+      Validators.required, //campo requerido
       ])]
     })
   }
@@ -59,19 +62,7 @@ export class RegisterComponent implements OnInit{
     
   }
 
-  totalUsersadd(){
-    
-  }
-
-  // fazerCadastro() {
-  //   this.users = this.form.value;
-  //   console.log(this.users)
-  //   console.log(this.users.length)
-  // }
-
   fazerCadastro(){
-
-    // localStorage.getItem()
 
     const id = this.user.length + 1;
     const name_form = this.form.controls['name'].value;
@@ -80,6 +71,7 @@ export class RegisterComponent implements OnInit{
     const password_check_form = this.form.controls['password_check'].value;
     const phone_form = this.form.controls['phone'].value;
     const birth_date_form = this.form.controls['birth_date'].value;
+    const genre_form = this.form.controls['genre'].value;
 
     this.user.push(new User(
       id,
@@ -88,20 +80,16 @@ export class RegisterComponent implements OnInit{
       password_form,
       password_check_form,
       phone_form,
-      birth_date_form))
+      birth_date_form,
+      genre_form))
 
       //this.user != undefined || this.user != null && !
     if (this.form.valid && this.user != undefined) {
-      window.alert('Usuario Cadastrado com Sucesso!!')      
-      //navegação      
-      this.route.navigate(['/','login']);
-
-      const keyAuth = email_form;
-
-      localStorage.setItem('USER',JSON.stringify(this.user));
-
-      console.log(this.form.value)
-
+      console.log('usuario cadastrado')
+      window.alert('Usuario Cadastrado com Sucesso!!')            
+      this.route.navigate(['/','login']);//após confirmação de conta criada, 
+                                        //direciona o usuáro para tela de login
+      localStorage.setItem('USER',JSON.stringify(this.user)); //salva o dado no banco LocalStorage
     } else {
       console.log('usuario não cadastrado')
       window.alert('Preencha o formulário primeiro!')
@@ -109,16 +97,11 @@ export class RegisterComponent implements OnInit{
   }
 
   saveStorage(){
-
-
-
     localStorage.setItem('USER' ,JSON.stringify(this.user));
   }
 
   getStorage(){
     this.user = JSON.parse(localStorage.getItem('USER'))
-    console.log(this.user[0].name)
-    console.log(this.user[0].email)
   }
 
 }

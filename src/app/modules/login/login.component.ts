@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, NgModule } from '@angular/core';
+import { Component, Input, OnInit, NgModule, EventEmitter } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormBuilder, FormGroup, FormControl, Validators, Form, FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -17,12 +17,14 @@ export class LoginComponent implements OnInit {
   public form: FormGroup;
   public user: User[] = [];
 
-  public email: string
-  public password: string
-  
+  public authUser: boolean = false;
+
+  public mostarMenu = new EventEmitter<boolean>();
+    
   constructor(
     public route: Router,
-    public formLogin: FormBuilder
+    public formLogin: FormBuilder,
+    public authService: AuthService
     ){
 
       this.form = this.formLogin.group({
@@ -40,7 +42,11 @@ export class LoginComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  // authLogin(){
+  //   this.authService.fazerLogin();
+  // }
+
+  ngOnInit() {
 
     if (localStorage.getItem('USER')) {
       
@@ -60,10 +66,12 @@ export class LoginComponent implements OnInit {
       this.form.controls['password'].value == this.user[i].password)
       {
         window.alert(`Bem vindo `+this.user[i].name)
+        this.authUser = true
         this.route.navigate(['/','home']);
 
       } else {
         window.alert('Email ou senha inválidos')
+        this.authUser = false
       }
 
       console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
@@ -72,13 +80,6 @@ export class LoginComponent implements OnInit {
       console.log("password input: ",this.form.controls['password'].value)
       console.log("password banco: ",this.user[i].password)
       console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
-
-
-      
-
     }
-
-    
-
   }
 }

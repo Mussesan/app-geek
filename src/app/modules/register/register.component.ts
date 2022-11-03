@@ -13,9 +13,10 @@ import { User } from '../../models/user.model';
 })
 export class RegisterComponent implements OnInit{
 
-  public form: FormGroup;
-  public user: User[] = [];
-  users: Array <Object>
+  form: FormGroup;
+  user: User[] = [];
+  users: Array <Object>;
+  authed: boolean;
   
 
   
@@ -81,7 +82,9 @@ export class RegisterComponent implements OnInit{
       password_check_form,
       phone_form,
       birth_date_form,
-      genre_form))
+      genre_form,
+      this.authed = false
+      ))
 
       //this.user != undefined || this.user != null && !
     if (this.form.valid && this.user != undefined) {

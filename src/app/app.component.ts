@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { AuthService } from './modules/login/auth.service';
+import { Component, Input } from '@angular/core';
 import { LoginComponent } from './modules/login/login.component';
+import { AuthService } from './shared/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -10,14 +10,16 @@ import { LoginComponent } from './modules/login/login.component';
 export class AppComponent {
   title = 'geek-app';
 
-  mostrarMenu: boolean = false;  
+  mostrarMenu: boolean = false;
 
-  constructor(public loginAuth: LoginComponent) {
+  @Input() auther: boolean = false;
+
+  constructor(private authService: AuthService) {
   }
 
   ngOnInit(){
-    this.loginAuth.mostarMenu.subscribe(
+    this.authService.showMenuEmitter.subscribe(
       mostrar =>  this.mostrarMenu = mostrar
-    )
+    );
   }
 }

@@ -12,8 +12,8 @@ import { ProfileComponent } from './modules/profile/profile.component';
 import { ChatComponent } from './modules/chat/chat.component';
 import { ActivitiesComponent } from './modules/activities/activities.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
-import { AuthService } from './modules/login/auth.service';
 import { HomeComponent } from './modules/home/home.component';
+import { AuthService } from './shared/auth.service';
 
 
 
@@ -35,10 +35,9 @@ import { HomeComponent } from './modules/home/home.component';
     AppRoutingModule,   
     ReactiveFormsModule,
     FormsModule
-
   ],
   providers: [
-    LoginComponent
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

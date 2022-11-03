@@ -4,14 +4,15 @@ import { FormBuilder, FormGroup, FormControl, Validators, Form, FormsModule, NgF
 import { Router } from '@angular/router';
 
 import { User } from 'src/app/models/user.model';
-import { AuthService } from './auth.service';
-import { NgFor } from '@angular/common';
+import { AuthService } from 'src/app/shared/auth.service';
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   public form: FormGroup;
@@ -66,7 +67,7 @@ export class LoginComponent implements OnInit {
       this.form.controls['password'].value == this.user[i].password)
       {
         window.alert(`Bem vindo `+this.user[i].name)
-        this.authUser = true
+        this.authService.authLogin()
         this.route.navigate(['/','home']);
 
       } else {

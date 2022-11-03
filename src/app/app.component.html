@@ -13,7 +13,7 @@
             <div class="phone">
                 <div class="content">
                                                         <!-- *ngIf="mostrarMenu"  -->
-                        <div class="wrapper"><!-- Deve ser coloado dentro deste wrapper -->
+                        <div class="wrapper" *ngIf="mostrarMenu"><!-- Deve ser coloado dentro deste wrapper -->
                             <nav>
                                 <input type="radio" name="tab" id="comment" >
                                 <input type="radio" name="tab" id="glass">

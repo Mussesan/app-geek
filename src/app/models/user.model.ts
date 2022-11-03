@@ -10,7 +10,8 @@ export class User {
         public password_check:  string,
         public phone:           number,
         public birth_date:      Date,
-        public genre:           number
+        public genre:           number,
+        public authed:          boolean
     ){}
 
     

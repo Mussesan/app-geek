@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Form, ReactiveFormsModule } from '@angular/forms';
+import { Form, FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import {HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -34,6 +34,7 @@ import { HomeComponent } from './modules/home/home.component';
     BrowserModule,
     AppRoutingModule,   
     ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [AuthService],

@@ -9,17 +9,21 @@ import { User } from 'src/app/models/user.model';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
+
+  public user: User[] = [];
+
+
 
   ngOnInit(): void {
-    
   }
+
+  
 
   showname(){
 
-  //  this.usuario = JSON.parse(localStorage.getItem('USUARIO'));
-
-  //  console.log(this.usuario.name)
+    this.user = JSON.parse(localStorage.getItem('USER'))
+    console.log(this.user[0].email)
   }
 
   

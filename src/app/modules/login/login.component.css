@@ -1,39 +1,13 @@
 .container {
-    
-
-    background-color: rgb(0, 0, 0);
-    margin-top: 100px;
-    height: 600px;
+    --light-color: #fff;
+    margin-top: 160px;
+    padding-top: 90px;
+    height: 1000px;
     width: 350px;
     bottom: 50px;
     right: 10px;
+    font-family: 'Kanit';    
     margin: auto;
-}
-
-.white-card {
-    
-    border: 40px solid #fff;
-}
-
-.btn-group {
-    border-radius: 100px;
-    font-family: 'Kanit';
-    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
-}
-
-.btn {
-    color: #ffffff;
-    border-radius: 100px;
-    width: 150px;
-    font-family: 'Kanit';
-}
-
-.logo {
-    border-radius: 100px;
-    border-style: groove;
-    border-color: #121212;
-    width: 200px;
-    height: 200px;
 }
 
 .text-center {
@@ -41,24 +15,52 @@
     font-family: 'Kanit';
 }
 
-.input-group-field {
-    padding-left: 20px;
-    height: 40px;
+.btn-rg {
     color: #ffffff;
-    background-color: rgba(184, 19, 51, 1);
-    border: 2px solid;
-    border-radius: 25px;
+    margin-top: 15px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9));
+    margin-bottom: 10px;
+    border: 3px solid #212529;
 }
 
-::placeholder {
+form .form-icons {
     color: #ffffff;
+    text-align: right;
+    background: linear-gradient(90deg, rgb(35, 22, 151) 5%, rgb(189, 22, 255) 55%, rgb(255, 27, 236) 100%);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    padding: 60px 30px;
 }
 
+.input-group {
+    width: 200px;
+}
 
-.login-box .form-icons .fa {
-    color: #ffffff;
-    width: 1rem;
+form .form-icons .input-group-field {
+    border-color: black;
     padding-left: 10px;
+}
+
+.input-group-field {
+    color: #ffffff;
+    width: 80%;
+    background-color: #121212;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+form .form-icons .fa {
+    width: 2rem;
+    height: 30px;
+    border-radius: 10%;
+}
+
+::placeholder  {
+    color: #646464;
 }
 
 .form-icons {
@@ -66,89 +68,147 @@
     padding: 20px 20px;
 }
 
+.fa-user {
+    color:#fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 18px;
+}
+
 .fa-envelope {
-    
-    padding-top: 10px;
-    padding-right: 20px;
-    
-}
-
-.fa-envelope i {
-    color: red;
-}
-
-.fa-envelope::after {
-    
-    padding-top: 10px;
-    padding-right: 20px;
-    
+    color:#fff;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 8px;
 }
 
 .fa-key {
-    padding-top: 10px;
+    color:#fff;
+    padding-top: 5px;
     padding-right: 20px;
+    padding-left: 8px;
 }
 
-.esqueceu-senha {
-    color: white;
-    padding: 10px 10px 10px 140px;
-    font-size: 10px;
+.fa-phone {
+    color:#fff;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 8px;
 }
 
-.relembrar {
-    color: #ffffff;
-    font-family: 'Kanit';
+.fa-calendar {
+    color:#fff;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 8px;
 }
 
-.btn-group {
-    border-radius: 100px;
-    font-family: 'Kanit';
-    background: linear-gradient(0deg, rgba(136, 24, 51, 0.3), rgb(184, 19, 51, 0.9))
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-image: url(../../../assets/images/backgrounds/rm251-aum-06-f_586x855.png);
+    height: 855px;
+    background-size: cover;
+}
+
+/* -------- */
+.logo-text > h1 {
+    font-size: 50px;
+}
+
+.logo-text {
+    font-size: 40px;
+    margin: 10px 10px 30px 10px;
+    font-family: 'Chakra Petch', sans-serif;
+
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+}
+
+@keyframes flicker {
     
+    0%, 18%, 22%, 25%, 53%, 57%, 70% {
+
+        text-shadow:
+        0 0 4px rgb(255, 0, 234),
+        0 0 11px rgba(38, 0, 253, 0.527),
+        0 0 40px  rgba(172, 112, 253, 1.0),
+        0 0 80px  rgba(172, 112, 253, 1.0),
+        0 0 90px rgba(172, 112, 253, 1.0),
+        0 0 100px rgba(172, 112, 253, 1.0);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        }    
 }
 
 .btn {
     color: #ffffff;
-    border-radius: 100px;
-    width: 150px;
+    border-radius: 10px;
+    width: 130px;    
     font-family: 'Kanit';
-    font-size: 15px;
-    transition: background-color 0.5    s;
+    font-size: 16px;
+    transition: background-color 1.0s;
+    border: 3px solid rgba(10, 10, 10, 1.1);
+    margin: 0 5px 0 5px 0;
 }
 
 .btn:hover {
-    background: linear-gradient(0deg, rgb(184, 19, 51, 0.9),rgba(136, 24, 51, 0.3));
-    transition: background-color 0.5s;
+
+    background: linear-gradient(0deg, rgb(187, 4, 172), rgb(66, 206, 248));
+    transition: background-color 3,0s;
+    box-shadow: 0px 0px 15px #51fcff;
+    border: 3px solid white;
 }
 
-.title-social-icons {
-    color: #ffffff;
-    font-size: 15px;
-}
-
-.divider {
-    margin: 30px 10px 30px 10px;
-    padding-top: 30px;
-    border-top: 2px ridge rgba(255,255,255,0.2);
+.btn-group {
+    border-radius: 15px;
+    font-family: 'Kanit';
+    background: linear-gradient(0deg, rgb(139, 1, 128), rgba(0, 150, 255, 1.0));
+    position: relative;
+    margin-top: 45px;
     
-    color: #fff;
 }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
-    margin: 15px;
-    cursor: pointer;
-}
-
-.social-icons-group {
-    padding-top: 30px;
-    margin-top: 30px;
+#palavra-geek {
+    margin-top: -20px;
 }
 
 .unscribedMsg {
-    color: rgba(255, 0, 0, 0.5);
-    
     text-decoration: none;
-    font-size: 12px;
+    color:rgb(174, 49, 252);
+    font-size: 15px;
+    margin-bottom: 25px;
 }
+
+.social {
+    font: 'Kanit';
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.social-icons-group {
+    
+}
+
+.social-icon {
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+
+.remember {
+    color: #ffffff;
+    font-family: 'Kanit';    
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+

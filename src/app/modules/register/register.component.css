@@ -6,8 +6,7 @@
     width: 350px;
     bottom: 50px;
     right: 10px;
-    font-family: 'Kanit';
-    
+    font-family: 'Kanit';    
     margin: auto;
 }
 
@@ -43,7 +42,7 @@
 form .form-icons {
     color: #ffffff;
     text-align: right;
-    background: linear-gradient(90deg, rgb(23, 15, 99) 0%, rgb(116, 17, 141) 35%, rgb(255, 27, 236) 100%);
+    background: linear-gradient(90deg, rgb(35, 22, 151) 5%, rgb(189, 22, 255) 55%, rgb(255, 27, 236) 100%);
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -173,6 +172,12 @@ body {
     transition: background-color 1.0s;
     border: 3px solid rgba(10, 10, 10, 1.1);
     margin: 0 5px 0 5px 0;
+    transition: all 500ms;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 15px #5df4ff;
+    transition: all 500ms;
 }
 
 .btn:hover {

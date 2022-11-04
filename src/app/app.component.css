@@ -119,7 +119,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.6s ease;
+  transition: color 0.6s ease-in-out;
 }
 
 .wrapper nav #comment:checked~label.comment a,
@@ -174,3 +174,52 @@ body {
 .wrapper nav input {
   display: none;
 }
+
+.notificacao {
+  width: 90px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);  
+  position: absolute;
+  right: 15px;
+  top: 0px;
+
+  position: absolute;
+  z-index: 5;
+  transition: all 500ms;
+}
+
+.notificacao:hover {
+  width: 90px;
+  height: 120px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(35, 22, 151, 0.552) 5%, rgba(189, 22, 255, 0.448)100%); 
+  right: 15px;
+
+  position: absolute;
+  z-index: 5;
+  transition: all 500ms;
+}
+
+.exit-span {
+  color: #fff;
+  width: 90px;
+  height: 50px;
+  visibility: hidden;
+  border-radius: 15px;
+
+  background: linear-gradient(90deg, rgba(35, 22, 151, 0.896) 5%, rgba(189, 22, 255, 0.852)100%);
+  transition: all 500ms;  
+  position: absolute;
+  z-index: 0;
+
+}
+
+.notificacao:hover .exit-span {
+
+  visibility: visible;
+  margin-top: 55px;
+
+
+}
+

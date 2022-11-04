@@ -10,9 +10,7 @@ import { AuthService } from './shared/auth.service';
 export class AppComponent {
   title = 'geek-app';
 
-  mostrarMenu: boolean = false;
-
-  @Input() auther: boolean = false;
+  mostrarMenu: boolean = true;
 
   constructor(private authService: AuthService) {
   }
@@ -23,3 +21,5 @@ export class AppComponent {
     );
   }
 }
+
+

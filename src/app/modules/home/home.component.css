@@ -1,12 +1,11 @@
-body,
-html {
-    height: 1000px;
-    margin: 0;
+body {
+    height: 900px;
+    margin: 0px;
+    height: 0px;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     background-image: url('../../../assets/images/backgrounds/outrun-neon-dark-background-purple-586x855.jpg');
     background-size: cover
-    ;
-
 }
 
 nav {
@@ -38,10 +37,9 @@ nav>svg {
 
 html,
 body {
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
+    margin-top: -61px;
+    border-radius: 15px
+
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');

@@ -7,10 +7,9 @@ body , html {
 }
 
 .chat1 {
-    position: relative;
-    margin-left: 5px;
-    margin-top: 5px;
-    width: 40%;
+    position: relative;    
+    margin-top: 10px;
+    width: 95%;
     height: 100%;
 }
 .chat2 {
@@ -264,5 +263,9 @@ body , html {
 .action_menu ul li:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.conversation-box {
+    cursor: pointer;
 }
 

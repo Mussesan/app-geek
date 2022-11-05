@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActivitiesComponent } from './modules/activities/activities.component';
+import { ChatChildComponent } from './modules/chat/chat-child/chat-child.component';
 import { ChatComponent } from './modules/chat/chat.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
 import { HomeComponent } from './modules/home/home.component';
@@ -17,7 +17,7 @@ const app_router: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'find-player', component: FindPlayertwoComponent},
   {path: 'chat', component: ChatComponent},
-  {path: 'activities', component: ActivitiesComponent}
+  {path: 'chatChild', component: ChatChildComponent}
 ];
 
 @NgModule({

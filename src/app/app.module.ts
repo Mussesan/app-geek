@@ -10,10 +10,10 @@ import { RegisterComponent } from './modules/register/register.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
 import { ProfileComponent } from './modules/profile/profile.component';
 import { ChatComponent } from './modules/chat/chat.component';
-import { ActivitiesComponent } from './modules/activities/activities.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
 import { HomeComponent } from './modules/home/home.component';
 import { AuthService } from './shared/auth.service';
+import { ChatChildComponent } from './modules/chat/chat-child/chat-child.component';
 
 
 
@@ -25,9 +25,9 @@ import { AuthService } from './shared/auth.service';
     WelcomeComponent,
     ProfileComponent,
     ChatComponent,
-    ActivitiesComponent,
     FindPlayertwoComponent,
-    HomeComponent
+    HomeComponent,
+    ChatChildComponent
 
   ],
   imports: [

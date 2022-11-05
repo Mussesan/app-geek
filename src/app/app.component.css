@@ -13,8 +13,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -54,7 +52,7 @@ ul {
     background-color: #36383F;
     border-radius: 40px;
     width: 600px;
-    height: 960px;
+    height: 900px;
     Display: flex;
     justify-content: center;
     align-items: center;
@@ -74,20 +72,10 @@ ul {
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-html,
 body {
     display: grid;
-    height: 100%;
     place-items: center;
-    text-align: center;
-
+    text-align: center
 }
 
 .wrapper {
@@ -193,33 +181,33 @@ body {
   width: 90px;
   height: 120px;
   border-radius: 15px;
-  background: linear-gradient(90deg, rgba(35, 22, 151, 0.552) 5%, rgba(189, 22, 255, 0.448)100%); 
+  background: linear-gradient(90deg, rgba(35, 22, 151, 0) 5%, rgba(189, 22, 255, 0)100%); 
   right: 15px;
 
   position: absolute;
   z-index: 5;
-  transition: all 500ms;
+  transition: all 100ms;
 }
 
 .exit-span {
   color: #fff;
   width: 90px;
-  height: 50px;
+  height: 0px;
   visibility: hidden;
   border-radius: 15px;
+  margin-top: 50px;
 
   background: linear-gradient(90deg, rgba(35, 22, 151, 0.896) 5%, rgba(189, 22, 255, 0.852)100%);
-  transition: all 500ms;  
+  transition: all 100ms;  
   position: absolute;
   z-index: 0;
 
 }
 
 .notificacao:hover .exit-span {
-
   visibility: visible;
   margin-top: 55px;
-
-
+  height: 50px;
+  cursor:pointer
 }
 

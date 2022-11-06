@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { User } from 'src/app/models/user.model';
+
 @Component({
   selector: 'app-chat-child',
   templateUrl: './chat-child.component.html',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatChildComponent implements OnInit {
 
+  user: User; 
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.user = JSON.parse(localStorage.getItem('USER'));
+
+    console.log(this.user)
   }
 
 }

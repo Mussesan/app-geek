@@ -1,14 +1,14 @@
 body , html {
-    height: 100%;
-    margin: 0;
-    background: #0000;
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-    background: linear-gradient(to right, #00ffee, #86A8E7, #7F7FD5);
+    width: 586px;
+    height: 853px;
+    margin-top: -60px;
+    border-radius: 15px;    
+    background-image: url('../../../assets/images/backgrounds/outrun-neon-dark-background-purple-586x855.jpg');
 }
 
 .chat1 {
     position: relative;    
-    margin-top: 10px;
+    margin-top: 70px;
     width: 95%;
     height: 100%;
 }
@@ -105,19 +105,21 @@ body , html {
 }
 
 .contacts li {
-    width: 100% !important;
-    padding: 5px 10px;
-    margin-bottom: 15px !important;
+    width: 90%;
+    padding: 20px;
+    margin: 5px auto 20px auto;
+    cursor: pointer;
 }
 
 .active {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 46, 46, 0.705);
+    border-radius: 15px
 }
 
 .user_img {
     height: 70px;
     width: 70px;
-    border: 1.5px solid #f5f6fa;
+    border: ridge 2px rgba(111, 219, 255, 0.822);
 
 }
 
@@ -261,8 +263,7 @@ body , html {
 }
 
 .action_menu ul li:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(55, 55, 55, 0.585);
 }
 
 .conversation-box {

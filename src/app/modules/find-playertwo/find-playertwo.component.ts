@@ -1,3 +1,4 @@
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +10,6 @@ export class FindPlayertwoComponent implements OnInit {
 
   constructor() {}
 
+  ngOnInit() {}
 
-  ngOnInit(): void {
-  }
-
-
-
-  onLoad(){
-    var menuButton = document.getElementById("open-menu");
-    return menuButton
-  }
 }

@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Form, FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
-import {HttpClient } from '@angular/common/http';
 
+import { MatSliderModule } from '@angular/material/slider';
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/login.component';
@@ -14,6 +16,17 @@ import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.
 import { HomeComponent } from './modules/home/home.component';
 import { AuthService } from './shared/auth.service';
 import { ChatChildComponent } from './modules/chat/chat-child/chat-child.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Pp1Component } from './modules/find-playertwo/players/pp1/pp1.component';
+import { Pp2Component } from './modules/find-playertwo/players/pp2/pp2.component';
+import { Pp3Component } from './modules/find-playertwo/players/pp3/pp3.component';
+import { Pp4Component } from './modules/find-playertwo/players/pp4/pp4.component';
+import { Pp5Component } from './modules/find-playertwo/players/pp5/pp5.component';
+import { Layout2Component } from './modules/find-playertwo/layout2/layout2.component';
+import { Layout3Component } from './modules/find-playertwo/layout3/layout3.component';
+import { Layout4Component } from './modules/find-playertwo/layout4/layout4.component';
+import { Layout5Component } from './modules/find-playertwo/layout5/layout5.component';
+import { EcomerceComponent } from './modules/ecomerce/ecomerce.component';
 
 
 
@@ -27,14 +40,26 @@ import { ChatChildComponent } from './modules/chat/chat-child/chat-child.compone
     ChatComponent,
     FindPlayertwoComponent,
     HomeComponent,
-    ChatChildComponent
-
+    ChatChildComponent,
+    Pp1Component,
+    Pp2Component,
+    Pp3Component,
+    Pp4Component,
+    Pp5Component,
+    Layout2Component,
+    Layout3Component,
+    Layout4Component,
+    Layout5Component,
+    EcomerceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,   
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    CarouselModule 
   ],
   providers: [
     AuthService

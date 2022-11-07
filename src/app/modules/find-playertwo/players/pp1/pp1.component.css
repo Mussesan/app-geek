@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #f1f1f1;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.card-container {
+    width: 400px;
+    height: 530px;
+    background: rgba(255, 255, 255, 0.285);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    overflow: hidden;
+    display: inline-block;
+
+    margin-top: 400px;
+}
+
+.upper-container {
+    height: 180px;
+    background: #7F00FF;
+}
+
+.image-container {
+    background: rgb(247, 0, 0);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translate(100px, 100px);
+    margin: -10% 0px 0px 6%;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.lower-container {
+    height: 280px;
+    background:rgba(255, 255, 255, 0);
+    padding: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.lower-container h3,
+h4 {
+    box-sizing: border-box;
+    line-height: .6;
+    font-weight: lighter;
+}
+
+.lower-container h4 {
+    color: #e4c9ff;
+    opacity: 1;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lower-container p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.lower-container .btn {
+    width: 120px;
+    margin: 0px 5px;
+    background: #7F00FF;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s ease-in;
+    display: inline-block;
+}
+
+.action-buttons .btn  {
+    margin-top: 20px;
+    width: 70px;
+    font-size: 20px;
+}
+
+.lower-container .btn:hover {
+    background: linear-gradient(0deg, rgb(139, 1, 128), rgba(0, 150, 255, 1.0));
+    
+    
+}
+
+
+.fa-gamepad {
+    font-size: 30px;
+}

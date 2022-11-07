@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChatChildComponent } from './modules/chat/chat-child/chat-child.component';
 import { ChatComponent } from './modules/chat/chat.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
+import { Layout2Component } from './modules/find-playertwo/layout2/layout2.component';
+import { Layout3Component } from './modules/find-playertwo/layout3/layout3.component';
+import { Layout4Component } from './modules/find-playertwo/layout4/layout4.component';
+import { Layout5Component } from './modules/find-playertwo/layout5/layout5.component';
 import { HomeComponent } from './modules/home/home.component';
 import { LoginComponent } from './modules/login/login.component';
 import { ProfileComponent } from './modules/profile/profile.component';
@@ -17,7 +21,12 @@ const app_router: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'find-player', component: FindPlayertwoComponent},
   {path: 'chat', component: ChatComponent},
-  {path: 'chatChild', component: ChatChildComponent}
+  {path: 'chatChild', component: ChatChildComponent},
+  {path: 'lay2', component: Layout2Component},
+  {path: 'lay3', component: Layout3Component},
+  {path: 'lay4', component: Layout4Component},
+  {path: 'lay5', component: Layout5Component},
+
 ];
 
 @NgModule({

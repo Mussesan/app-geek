@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ChatChildComponent } from './modules/chat/chat-child/chat-child.component';
 import { ChatComponent } from './modules/chat/chat.component';
+import { EcomerceComponent } from './modules/ecomerce/ecomerce.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
 import { Layout2Component } from './modules/find-playertwo/layout2/layout2.component';
 import { Layout3Component } from './modules/find-playertwo/layout3/layout3.component';
@@ -26,7 +28,7 @@ const app_router: Routes = [
   {path: 'lay3', component: Layout3Component},
   {path: 'lay4', component: Layout4Component},
   {path: 'lay5', component: Layout5Component},
-
+  {path: 'ecomerce', component: EcomerceComponent}
 ];
 
 @NgModule({

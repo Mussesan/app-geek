@@ -30,16 +30,6 @@ body {
     background-size: cover;
 }
 
-.logo {
-    background-color: #fb3640;
-    border-radius: 100px;
-    border-style: groove;
-    border-color: black;
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
-}
-
 .text-center {
     background-color: #121212;
     color: #ffffff;

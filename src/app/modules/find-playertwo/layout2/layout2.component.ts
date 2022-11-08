@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pp3Component } from '../players/pp3/pp3.component';
 
 @Component({
   selector: 'app-layout2',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Layout2Component implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
+  
+
+
+
 
 }

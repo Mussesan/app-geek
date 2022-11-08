@@ -262,3 +262,31 @@ body , html {
     cursor: pointer;
 }
 
+#back-button {
+    width: 30px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    transition: all 0.08s ease-in;
+    color:rgba(0, 0, 0, 0);
+    background: #76ff9459;
+    cursor: pointer;
+}
+
+.fa-arrow-left {
+
+    color: rgba(255, 255, 255, 0.603);
+    font-size: 25px;
+    padding: 9px 6px 0px 6px;
+
+}
+
+#back-button:hover {
+    width: 90px;
+    background: linear-gradient(45deg, #5daf6f, #73c0d3);
+    transition: all 0.08s ease-in;
+    color: rgb(255, 255, 255);
+}

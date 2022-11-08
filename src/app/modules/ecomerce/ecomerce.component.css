@@ -98,30 +98,32 @@ body {
 
 
 .credit-add-button {
-    position: absolute;
+
     display: flex;
     border: solid 3px #003950;
-    width: 180px;
-    padding: 5px 0px 30px 9px;
-    bottom: 10px;
-    left: 309px;
-    height: 30px;
+    width: 250px;
+    padding: 10px 10px 10px 30px;
+    height: 60px;
 
-    border-radius: 20px;
+    position: absolute;
+    bottom: 95px;
+    left: 130px;
+    
+    border-radius: 10px;
 
+    font-size: 19px;
     color: #fff;
-    background: linear-gradient(45deg, #fd03cb 0%, #1920ea  100%);    
-    box-shadow: 0 0px 15px rgba(0, 149, 255, 0.718);
+    background: linear-gradient(0deg, #1c027a 0%, #be4eff  100%);
 }
 
 .credit-add-button:hover {
-    background: linear-gradient(45deg, #988600 0%, #523e00  100%);    
+    background: linear-gradient(180deg, #e0c703 0%, #523e00  100%);    
     box-shadow: 0 0px 25px rgba(238, 255, 0, 0.718);
     cursor: pointer;
 }
 
 .credit-add-button:hover i {
-    color:  #93f637;
+    color:  #ffee00;
 }
 
 .credit-add-button i {
@@ -133,7 +135,7 @@ body {
 .big-service {
     background-color: #ffffffe8;
     width: 450px;
-    height: 300px;
+    height: 600px;
     margin: 20px auto 40px auto; 
     
     border: outset 3px rgba(255, 255, 255, 0.404);

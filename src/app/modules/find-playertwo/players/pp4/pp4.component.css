@@ -73,14 +73,14 @@ h4 {
 .lower-container .btn {
     width: 120px;
     margin: 0px 5px;
-    background: linear-gradient(0deg, rgb(71, 0, 65), rgb(171, 62, 255));
+    background: linear-gradient(0deg,#3f0458, #ae03f7);
     border: none;
     color: rgb(255, 255, 255);
     border-radius: 15px;
     font-size: 13px;
     text-decoration: none;
     font-weight: bold;
-    transition: all .3s ease-in;
+    transition: all .08s ease-in;
     display: inline-block;
 }
 
@@ -91,8 +91,8 @@ h4 {
 }
 
 .lower-container .btn:hover {
-    background: linear-gradient(0deg, rgb(0, 33, 76), rgb(215, 93, 255));
-    transition: all 500ms;
+    background: linear-gradient(45deg,#3750e0,#a605eb);
+    box-shadow: 0px 0px 25px rgb(205, 108, 235);
     
 }
 

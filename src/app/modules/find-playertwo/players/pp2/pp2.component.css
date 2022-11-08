@@ -75,14 +75,14 @@ h4 {
 .lower-container .btn {
     width: 120px;
     margin: 0px 5px;
-    background: #ffbb00;
+    background: linear-gradient(0deg, #755800, #ffce48);
     border: none;
     color: rgb(0, 0, 0);
     border-radius: 15px;
     font-size: 12px;
     text-decoration: none;
     font-weight: bold;
-    transition: all .3s ease-in;
+    transition: all .08s ease-in;
     display: inline-block;
 }
 
@@ -93,7 +93,8 @@ h4 {
 }
 
 .lower-container .btn:hover {
-    background: linear-gradient(0deg, rgb(139, 1, 128), rgba(0, 150, 255, 1.0));
+    background: linear-gradient(0deg, #e4ab00, #ffebb4);
+    box-shadow: 0px 0px 15px yellow;
     
     
 }

@@ -1,15 +1,8 @@
 ::rot {
-    --bg-standart: url(../assets/images/backgrounds/standart.jpg);
+
     --bg-black1: url(../assets/images/backgrounds/black1.webp);
     --bg-black2: url(../assets/images/backgrounds/black2.jpg);
-    --bg-blue1: url(../assets/images/backgrounds/blue1.jpg);
-    --bg-blue2: url(../assets/images/backgrounds/blue2.webp);
-    --bg-green1: url(../assets/images/backgrounds/green1.jpg);
-    --bg-green2: url(../assets/images/backgrounds/green2.jpg);
-    --bg-nature1: url(../assets/images/backgrounds/nature1.jpg);
-    --bg-nature2: url(../assets/images/backgrounds/nature2.jpg);
-    --bg-pink1: url(../assets/images/backgrounds/pink1.jpg);
-    --bg-pink2: url(../assets/images/backgrounds/pink2.jpg);
+
 }
 
 body {
@@ -44,7 +37,7 @@ ul {
 
 
 .container {
-    Display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -54,7 +47,7 @@ ul {
     border-radius: 40px;
     width: 600px;
     height: 900px;
-    Display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 50px #85888C;

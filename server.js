@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/dist/geek-app'));
 
-app.get('/+', (req,res) => {
-    res.sendFile (__dirname + '/dist/geek-app/index.html');
+app.get('/*', (req,res) => {
+    res.sendFile(__dirname + '/dist/geek-app/index.html');
 })
 
 app.listen(PORT, () =>{

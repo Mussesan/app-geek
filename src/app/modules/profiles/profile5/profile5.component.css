@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     margin-top: -60px;
     border-radius: 16px;
-    background-image: url('./../../../../assets/images/backgrounds/yellowbkgd.jpg');
+    background-image: url('./../../../../assets/images/backgrounds/pearljam.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,14 +18,14 @@ body {
     
 
     
-    background: rgba(95, 95, 95, 0.541);
+    background: rgba(68, 68, 68, 0.849);
     border-radius: 6px;
     box-shadow: 0px 1px 10px 1px #000;
 }
 
 .upper-container {
     height: 120px;
-    background: #ffbb00;
+    background: rgba(43, 43, 43, 0.849);
 }
 
 .image-container {
@@ -71,14 +71,18 @@ h4 {
     color: rgb(255, 255, 255);    
 }
 
+strong {
+    text-shadow: 2px 7px 7px #000;
+}
+
 .lower-container .btn {
     width: 120px;
-    margin: 40px 0px 0px 0px;
-    background: linear-gradient(0deg, #755800, #ffce48);
+    margin: 45px 0px 0px 0px;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(148, 0, 0));
     border: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     font-weight: bold;
     transition: all .08s ease-in;
@@ -86,10 +90,11 @@ h4 {
 }
 
 .lower-container .btn:hover {
-    background: linear-gradient(0deg, #e4ab00, #ffebb4);
-    box-shadow: 0px 0px 15px yellow;
+    background: linear-gradient(90deg, rgb(90, 0, 0), rgb(250, 36, 36));
+    box-shadow: 0px 0px 20px red;
+    
+    
 }
-
 
 
 .fa-gamepad {

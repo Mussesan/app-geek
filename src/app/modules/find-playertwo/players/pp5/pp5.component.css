@@ -95,7 +95,7 @@ h4 {
 
 .lower-container .btn:hover {
     background: linear-gradient(90deg, rgb(90, 0, 0), rgb(250, 36, 36));
-    box-shadow: 0px 0px 10px red;
+    box-shadow: 0px 0px 20px red;
     
     
 }

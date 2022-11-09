@@ -1,5 +1,5 @@
 body {
-    background-image: url(../../../assets/images/backgrounds/outrun-neon-dark-background-purple-586x855.jpg);
+    background-image: url('./../../../assets/images/backgrounds/outrun-neon-dark-background-purple-586x855.jpg');
     border-radius: 15px;
     margin-top: -59px;
     height: 853px;

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Form, FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
-
+import { Form, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -10,7 +9,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/login.component';
 import { RegisterComponent } from './modules/register/register.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
-import { ProfileComponent } from './modules/profile/profile.component';
 import { ChatComponent } from './modules/chat/chat.component';
 import { FindPlayertwoComponent } from './modules/find-playertwo/find-playertwo.component';
 import { HomeComponent } from './modules/home/home.component';
@@ -27,6 +25,11 @@ import { Layout3Component } from './modules/find-playertwo/layout3/layout3.compo
 import { Layout4Component } from './modules/find-playertwo/layout4/layout4.component';
 import { Layout5Component } from './modules/find-playertwo/layout5/layout5.component';
 import { EcomerceComponent } from './modules/ecomerce/ecomerce.component';
+import { Profile1Component } from './modules/profiles/profile1/profile1.component';
+import { Profile2Component } from './modules/profiles/profile2/profile2.component';
+import { Profile3Component } from './modules/profiles/profile3/profile3.component';
+import { Profile4Component } from './modules/profiles/profile4/profile4.component';
+import { Profile5Component } from './modules/profiles/profile5/profile5.component';
 
 
 
@@ -36,7 +39,6 @@ import { EcomerceComponent } from './modules/ecomerce/ecomerce.component';
     LoginComponent,
     RegisterComponent,
     WelcomeComponent,
-    ProfileComponent,
     ChatComponent,
     FindPlayertwoComponent,
     HomeComponent,
@@ -50,7 +52,12 @@ import { EcomerceComponent } from './modules/ecomerce/ecomerce.component';
     Layout3Component,
     Layout4Component,
     Layout5Component,
-    EcomerceComponent
+    EcomerceComponent,
+    Profile1Component,
+    Profile2Component,
+    Profile3Component,
+    Profile4Component,
+    Profile5Component
   ],
   imports: [
     BrowserModule,

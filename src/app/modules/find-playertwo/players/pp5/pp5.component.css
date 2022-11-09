@@ -26,7 +26,7 @@ body {
 
 .upper-container {
     height: 180px;
-    background-image: url(../../../../../assets/images/backgrounds/wp1929039.webp);
+    background-image: url('./../../../../../assets/images/backgrounds/wp1929039.webp');
     background-size: cover;
 }
 

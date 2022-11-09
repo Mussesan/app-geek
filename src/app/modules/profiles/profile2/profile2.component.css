@@ -1,36 +1,34 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #f1f1f1;
     font-family: arial;
     box-sizing: border-box;
+    margin-top: -60px;
+    border-radius: 16px;
+    background-image: url('./../../../../assets/images/backgrounds/yellowbkgd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
-
 .card-container {
-    width: 400px;
-    height: 530px;
-    background: rgba(255, 255, 255, 0.285);
-    border-radius: 6px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 1px 10px 1px #000;
-    overflow: hidden;
-    display: inline-block;
+    width: 520px;
+    height: 740px;
+    display: relative;
+    margin: -765px 0px 0px 30px;
+    
 
-    margin-top: 400px;
+    
+    background: rgba(95, 95, 95, 0.541);
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px #000;
 }
 
 .upper-container {
-    height: 180px;
+    height: 120px;
     background: #ffbb00;
 }
 
 .image-container {
-    background: rgb(255, 255, 255);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -42,60 +40,55 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin-left: -200px;
+    margin-top: -60px;
 }
 
 .lower-container {
     height: 280px;
-    background:rgba(0, 0, 0, 0);
+    background:rgba(255, 255, 255, 0);
     padding: 20px;
-    padding-top: 100px;
+    padding-top: 60px;
     text-align: center;
 }
 
-.lower-container h3,
 h4 {
-    box-sizing: border-box;
-    line-height: .6;
-    font-weight: lighter;
-}
-
-.lower-container h4 {
-    color: #ffc9c9;
+    position: absolute;
+    top: -30px;
+    right: -160px;
+    color: #ffffff;
     opacity: 1;
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 35px;
+    text-shadow: 0px 5px 10px #000;
 }
 
-.lower-container p {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 30px;
+.lower-container p, strong {
+    font-size: 25px;
+    color: rgb(255, 255, 255);    
 }
 
 .lower-container .btn {
     width: 120px;
-    margin: 0px 5px;
+    margin: 40px 0px 0px 0px;
     background: linear-gradient(0deg, #755800, #ffce48);
     border: none;
     color: rgb(0, 0, 0);
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     font-weight: bold;
     transition: all .08s ease-in;
     display: inline-block;
 }
 
-.action-buttons .btn  {
-    margin-top: 20px;
-    width: 70px;
-    font-size: 20px;
-}
-
 .lower-container .btn:hover {
     background: linear-gradient(0deg, #e4ab00, #ffebb4);
     box-shadow: 0px 0px 15px yellow;
 }
+
+
 
 .fa-gamepad {
     font-size: 30px;

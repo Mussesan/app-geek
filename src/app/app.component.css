@@ -19,7 +19,7 @@ body {
 }
 
 .bg-black1 {
-    background-image: url(../assets/images/backgrounds/black2.jpg);
+    background-image: url('./../assets/images/backgrounds/black2.jpg');
 }
 
 a {

@@ -4,9 +4,8 @@
   "scripts": {
     "ng s": "ng serve",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "engines": {

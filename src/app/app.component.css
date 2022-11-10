@@ -1,8 +1,6 @@
 ::rot {
 
-    --bg-black1: url(../assets/images/backgrounds/black1.webp);
-    --bg-black2: url(../assets/images/backgrounds/black2.jpg);
-
+    --bg-black1: url('../assets/images/backgrounds/black2.jpg');
 }
 
 body {
@@ -63,8 +61,6 @@ ul {
 }
 
   /* ----- */
-
-  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 body {
     display: grid;

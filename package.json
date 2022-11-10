@@ -2,9 +2,9 @@
   "name": "geek-app",
   "version": "1.0.0",
   "scripts": {
-    "ng s": "ng s -o",
+    "ng s": "ng serve",
     "ng": "ng",
-    "start": "node index",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

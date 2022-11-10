@@ -1,4 +1,3 @@
-import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

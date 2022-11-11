@@ -125,9 +125,9 @@ input::-webkit-inner-spin-button {
 }
 
 body {
-    background-image: url(../../../assets/images/backgrounds/rm251-aum-06-f_586x855.png);
-    height: 855px;
-    background-size: cover;
+    background-image: url('./../../../assets/images/backgrounds/rm251-aum-06-f_586x855.png');
+    background-size: 487px 855px;
+    height: 855px;  
 }
 
 /* -------- */

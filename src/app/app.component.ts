@@ -10,7 +10,7 @@ import { AuthService } from './shared/auth.service';
 export class AppComponent {
   title = 'geek-app';
 
-  mostrarMenu: boolean = false; //deixar como true somente durante testes 
+  mostrarMenu: boolean = true; //deixar como true somente durante testes 
 
   constructor(private authService: AuthService) {
   }

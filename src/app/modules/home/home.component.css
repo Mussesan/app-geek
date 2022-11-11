@@ -5,7 +5,8 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     background-image: url('../../../assets/images/backgrounds/outrun-neon-dark-background-purple-586x855.jpg');
-    background-size: cover
+
+    background-size: 500px 900px;
 }
 
 nav {

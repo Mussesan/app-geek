@@ -1,9 +1,10 @@
 body , html {
-    width: 586px;
+    width: 500px;
     height: 853px;
     margin-top: -60px;
     border-radius: 15px;    
     background-image: url('../../../assets/images/backgrounds/outrun-neon-dark-background-purple-586x855.jpg');
+    background-size: 500px 853px;
 }
 
 .chat1 {

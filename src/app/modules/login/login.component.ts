@@ -64,9 +64,13 @@ export class LoginComponent implements OnInit {
     for (let i = 0; i < (localStorage.length) ; i++) {
 
       if (this.form.controls['email'].value == this.user[i].email &&
-      this.form.controls['password'].value == this.user[i].password)
+          this.form.controls['password'].value == this.user[i].password)
       {
-        window.alert(`Bem vindo `+this.user[i].name)
+        if (this.user[i].genre == 1) {
+          window.alert(`Seja Bem Vindo, `+this.user[i].name+'!')
+        } else if (this.user[i].genre == 2) {
+          window.alert(`Seja Bem Vinda, `+this.user[i].name+'!')
+        }        
         this.authService.authLogin()
         this.route.navigate(['/','home']);
 
@@ -77,9 +81,9 @@ export class LoginComponent implements OnInit {
 
       console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
       console.log("login input: ",this.form.controls['email'].value)
-      console.log("login banco: ",this.user[i].email)
+      console.log("login seu banco: ",this.user[i].email)
       console.log("password input: ",this.form.controls['password'].value)
-      console.log("password banco: ",this.user[i].password)
+      console.log("password seu banco: ",this.user[i].password)
       console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
     }
   }

@@ -89,7 +89,7 @@ export class RegisterComponent implements OnInit{
       //this.user != undefined || this.user != null && !
     if (this.form.valid && this.user != undefined) {
       console.log('usuario cadastrado')
-      window.alert('Usuario Cadastrado com Sucesso!!')            
+      window.alert('Usuário Cadastrado com Sucesso!!')            
       this.route.navigate(['/','login']);//após confirmação de conta criada, 
                                         //direciona o usuáro para tela de login
       localStorage.setItem('USER',JSON.stringify(this.user)); //salva o dado no banco LocalStorage

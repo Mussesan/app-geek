@@ -31,9 +31,7 @@ export class HomeComponent implements OnInit {
     } else if (this.user[0].genre == 0) {
       this.imSrc = '../../../assets/images/girl9.png'
     }
-  }
-
-  
+  }  
 
   showname(){
 

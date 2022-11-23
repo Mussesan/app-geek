@@ -42,8 +42,8 @@
 
                 <input class="input-group-field" type="password" placeholder="Repita a senha" formControlName="password_check">
                 <i class="fa fa-key"></i>
-                <small class="danger" *ngIf="form.controls.password == form.controls.password_check && !form.controls.password.pristine">
-                    As senhas devem ser idênticas.
+                <small class="danger" *ngIf="form.controls.password.invalid && !form.controls.password.pristine">
+                    <br>As senhas não coincidem.
                 </small>
 
                 <input class="input-group-field" type="date" placeholder="Data de nascimento" formControlName="birth_date">
@@ -59,7 +59,6 @@
                 <div class="dropdown-opts">
                     <label for="genre"></label>
                     <select name="genre" id="genre-group" formControlName="genre">
-                        <option>Selecione</option>
                         <option value="0">Outro</option>
                         <option value="1">Ele</option>
                         <option value="2">Ela</option>                    

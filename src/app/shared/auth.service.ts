@@ -1,5 +1,4 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
-import { LoginComponent } from '../modules/login/login.component';
 import { User } from '../models/user.model';
 
 @Injectable({

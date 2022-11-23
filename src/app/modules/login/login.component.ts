@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, NgModule, EventEmitter } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormBuilder, FormGroup, FormControl, Validators, Form, FormsModule, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -17,9 +16,7 @@ export class LoginComponent implements OnInit {
 
   public form: FormGroup;
   public user: User[] = [];
-
   public authUser: boolean = false;
-
   public mostarMenu = new EventEmitter<boolean>();
     
   constructor(
@@ -43,19 +40,13 @@ export class LoginComponent implements OnInit {
 
   }
 
-  // authLogin(){
-  //   this.authService.fazerLogin();
-  // }
-
   ngOnInit() {
-
     if (localStorage.getItem('USER')) {
-      
+      //do nothing      
     } else {
-      window.alert("Não há usuários cadastrados!")
+      window.alert("Não há usuários cadastrados neste dispositivo!")
       this.route.navigate(['/','register']);
     }
-
   }
 
   fazerLogin(){
@@ -75,16 +66,18 @@ export class LoginComponent implements OnInit {
         this.route.navigate(['/','home']);
 
       } else {
+        console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
+        console.log("login input form: ",this.form.controls['email'].value)
+        console.log("login seu banco local: ",this.user[i].email)
+        console.log("password input form: ",this.form.controls['password'].value)
+        console.log("password seu banco local: ",this.user[i].password)
+        console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
+
         window.alert('Email ou senha inválidos')
         this.authUser = false
       }
 
-      console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
-      console.log("login input: ",this.form.controls['email'].value)
-      console.log("login seu banco: ",this.user[i].email)
-      console.log("password input: ",this.form.controls['password'].value)
-      console.log("password seu banco: ",this.user[i].password)
-      console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
+
     }
   }
 }

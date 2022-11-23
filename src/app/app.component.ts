@@ -20,6 +20,13 @@ export class AppComponent {
       mostrar =>  this.mostrarMenu = mostrar
     );
   }
+
+  onExit(){    
+    if (this.mostrarMenu == true) {
+      this.mostrarMenu = false
+    }
+  }
+  
 }
 
 
